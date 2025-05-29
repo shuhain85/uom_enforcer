@@ -7,7 +7,12 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
+override_doctype_class = {
+    "POS Invoice": "uom_enforcer.overrides.pos_invoice.CustomPOSInvoice"
+}
+override_doctype_class = {
+    "Sales Invoice": "uom_enforcer.overrides.sales_invoice.CustomSalesInvoice"
+}
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
